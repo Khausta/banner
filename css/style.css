@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap');
+
+
+a {
+    text-decoration: none;
+}
+.container {
+    max-height: 350px;
+}
+.header {
+    padding: 1px;
+    text-align: end;
+}
+.header_link {
+    font-family: sans-serif;
+    font-size: 10px;
+    line-height: 1;
+    color: rgb(119, 119, 119);
+}
+#block {
+    position: relative;
+}
+#block .tt_tgb_text {
+    padding-left: 6px;
+}
+#block .tt_tgb_text b {
+	font-family: 'Montserrat';
+    font-size: 18px;
+    line-height: 1.3;
+}
+#block .tt_tgb_text small {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 1;
+}
+#block .tt_tgb_text button {
+    font-family: 'Montserrat';
+    margin-bottom: 20px;
+    padding: 6px 18px;
+    border: 1px solid #3BBFED;
+    border-radius: 5px;
+    background: none;
+    font-weight: 700;
+    color: #3BBFED;
+}
+#block .tt_tgb_disclaimer{
+    font-family: 'Yanone Kaffeesatz';
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    width: 88%;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 17px;
+    color: rgb(175, 175, 175);
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+}
+#block .tt_tgb_inner {
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+#block .tt_tgb_inner > div {
+    width: 50%;
+}
+#block .tt_tgb_inner:after {
+    content: "ФСЗ 2009/04453 от 26.10.2017 \A ПМ-ОТС-2023-05-064 от 15.05.2023";
+    white-space: pre;
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    transform: translate(40%, 50%) rotateZ(90deg);
+    font-family: sans-serif;
+    font-size: 8px;
+    line-height: 1;
+    color: rgb(219, 219, 219);
+    text-transform: uppercase;
+}
+#block .tt_tgb_text b {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3BBFED;
+}
+#block .tt_tgb_text small {
+    font-family: 'Montserrat';
+    font-style: normal;
+    display: block;
+    width: 95%;
+    font-weight: 700;
+    color: #3BBFED;
+    margin: 0;
+    margin-top: 15px;
+}
+#block .tt_tgb_text ul {
+    padding-left: 0;
+}
+#block .tt_tgb_text li {
+    list-style-type: none;
+    padding-left: 26px;
+    background-image: url("../img/mark.png");
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 15px;
+    line-height: 1.2;
+}
+#block .tt_tgb_inner:after {
+    position: absolute;
+}
+#block .tt_tgb_image {
+    position: relative;
+    background:url("../img/prod.png"),  url("../img/ellipse.png");
+    background-repeat: no-repeat;
+    background-position: 103% 20%, 110% 50%;
+    background-size: auto 94%, 100% auto;
+    overflow: hidden;
+}
+
+
+#block .tt_tgb_image_helper {
+    width: 100%;
+    height: 100%;
+}
+
+#block .tt_tgb_image_helper img {
+    position: absolute;
+    object-fit: contain;
+    width: 70%;
+    object-position: 20% 50%;
+    object-fit: cover;
+    height: 100%;
+    width: 90%;
+    object-position: 0% 25%;
+}
+#block .tt_tgb_info {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: rgb(194, 193, 193);
+    text-transform: lowercase;
+    opacity: 0.4;
+}
+#block .tt_tgb_advertising {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 2px 5px;
+    background-color: rgb(194, 193, 193);
+    border-top-left-radius: 12px;
+    opacity: 0.4;
+    font-size: 12px;
+    line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .container:last-child {
+        display: none;
+    }
+    #block .tt_tgb_image_helper img {
+        object-position: 40% 50%;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    #block .tt_tgb_text b {
+        font-size: 3.4vw;
+        line-height: 1;
+    }
+    #block .tt_tgb_text small {
+        width: 40vw;
+    }
+    #block .tt_tgb_text small li {
+        font-size: 3vw;
+        line-height: 1;
+        margin-bottom: 2vw;
+        padding-left: 6vw;
+        background-size: 4vw;
+    }
+    #block .tt_tgb_text button {
+        margin-bottom: 10vw;
+        padding: 1vw 3vw;
+        font-size: 4vw;
+        font-weight: 900;
+    }
+    #block .tt_tgb_disclaimer {
+        font-size: 3.6vw;
+        font-weight: 700;
+    }
+    #block .tt_tgb_image {
+        background-position: 103% 4%, 122% -50%;
+        background-size: auto 44%, 120% auto;
+        overflow: hidden;
+    }
+    #block .tt_tgb_info {
+        display: none;
+    }
+    #block .tt_tgb_inner {
+        gap: 2vw;
+    }
+    #block .tt_tgb_inner::after {
+        font-size: 2.2vw;
+    }
+    #block .tt_tgb_advertising {
+        font-size: 3vw;
+    }
+}
+
